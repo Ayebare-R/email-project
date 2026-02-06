@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Assistant</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <h1>Email Assistant</h1>
+      <span id="header-status" class="status disconnected">Disconnected</span>
+    </div>
+    <div id="search-bar" class="search-bar" hidden>
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Search emails with AI (e.g. &quot;find invoices from last month&quot;)">
+        <button type="submit" class="btn btn-search">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside id="sidebar"></aside>
+    <main id="main-content"></main>
+  </div>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/components.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
