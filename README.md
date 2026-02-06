@@ -47,4 +47,4 @@ Python · FastAPI · imaplib/smtplib · Anthropic Claude API · vanilla JS
 
 ## Status
 
-.Works with Gmail and should work with any standard IMAP provider. No database — all state lives on the mail server.
+Works with Gmail and should work with any standard IMAP provider. No database — all state lives on the mail server.
