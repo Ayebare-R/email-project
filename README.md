@@ -1,10 +1,13 @@
 # email-project
 
-I wanted to understand how email actually works — not the Gmail UI, but the protocols underneath. IMAP, SMTP, MX records, the whole pipeline. So I built a client from scratch.
+I built this project for two reasons: to get sharper with Claude Code and to understand how email works beneath the surface. (IMAP, SMTP, MX records), the full protocol pipeline.
 
-It connects to any IMAP server, pulls your inbox, and lets you search and read emails through a web interface. The interesting part: search is agentic. You type something like *"find emails from Sarah about the budget from last month"* and Claude figures out the right IMAP SEARCH query, runs it, and can refine if the first attempt doesn't land. The raw IMAP command is shown alongside results so you can see what's happening under the hood.
+So I implemented this client. 
 
-There's also summarization, reply drafting, and email categorization — all through Claude's API.
+It connects directly to any IMAP server, pulls your inbox, and lets you search and read mail through a simple web interface. The interesting part is the search layer: you can type something like “find emails from Sarah about the budget from last month,” and Claude translates that intent into the correct IMAP SEARCH command, executes it, and iterates if needed. The raw protocol commands are shown alongside the results so you can see exactly what’s happening under the hood.
+On top of that, there’s summarization, reply drafting, and categorization via Claude’s API. 
+
+The core logic and protocol handling are all implemented directly.
 
 ## Setup
 
@@ -46,4 +49,4 @@ Python · FastAPI · imaplib/smtplib · Anthropic Claude API · vanilla JS
 
 ## Status
 
-In development. Works with Gmail and should work with any standard IMAP provider. No database — all state lives on the mail server.
+.Works with Gmail and should work with any standard IMAP provider. No database — all state lives on the mail server.
