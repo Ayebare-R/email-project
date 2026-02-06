@@ -2,7 +2,7 @@
 
 I built this project for two reasons: to get sharper with Claude Code and to understand how email works beneath the surface.
 
-This connects directly to any IMAP server, pulls your inbox, and lets you search and read mail through a simple web interface. The interesting part is the search layer: you can type something like “find emails from Sarah about the budget from last month,” and Claude translates that intent into the correct IMAP SEARCH command, executes it, and iterates if needed. The raw protocol commands are shown alongside the results so you can see exactly what’s happening under the hood.
+This client connects directly to any IMAP server, pulls your inbox, and lets you search and read mail through a simple web interface. The interesting part is the search layer: you can type something like “find emails from Sarah about the budget from last month,” and Claude translates that intent into the correct IMAP SEARCH command, executes it, and iterates if needed. The raw protocol commands are shown alongside the results so you can see exactly what’s happening under the hood.
 On top of that, there’s summarization, reply drafting, and categorization via Claude’s API. 
 
 The core logic and protocol handling are all implemented directly.
